@@ -1,0 +1,418 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  overflow-x: hidden;
+  color: #cccccc;
+}
+
+/* Header */
+header {
+  position: absolute;
+  z-index: 999;
+  width: 100%;
+  padding: 1.5em 0;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+header img {
+  float: left;
+  width: 200px;
+}
+
+.menu {
+  float: right;
+}
+
+.menu li {
+  display: inline-block;
+  padding: 20px 15px;
+}
+
+.menu a {
+  color: #cccccc;
+}
+
+.menu a:hover {
+  color: maroon;
+  font-weight: bold;
+}
+
+/* intro */
+#intro {
+  position: relative;
+  overflow: hidden;
+  min-height: 600px;
+  padding-top: 9em;
+}
+
+#intro .intro-left {
+  display: inline-block;
+  width: 100%;
+  max-width: 400px;
+}
+
+#intro .intro-left h1 {
+  font-size: 2.5em;
+  color: maroon;
+  line-height: 1.5em;
+  position: relative;
+}
+
+#intro .intro-left h1::after {
+  bottom: -24px;
+  left: 0;
+  width: 40px;
+  height: 4px;
+  content: '';
+  border-radius: 5px;
+  background: maroon;
+  opacity: 0.4;
+  position: absolute;
+}
+
+#intro .intro-left p {
+  font-size: 1.125 em;
+  line-height: 1.75 em;
+  padding-top: 3em;
+}
+
+#intro .intro-button {
+  font-weight: 500;
+  display: block;
+  width: 100%;
+  max-width: 180px;
+  margin: 2em;
+  text-align: center;
+  color: white;
+  border-radius: 10px;
+  background: maroon;
+  padding: 1em;
+}
+
+#intro a:hover {
+  opacity: 50%;
+}
+
+#intro .intro-right {
+  position: relative;
+  display: inline-block;
+  margin-left: 6em;
+}
+
+#intro .intro-right img {
+  max-width: 600px;
+}
+
+#intro .top-right-gradient {
+  position: absolute;
+  top: -40%;
+  right: -27%;
+  width: 800px;
+  height: 800px;
+  border-radius: 50%;
+  background: linear-gradient(147deg, #ad2f26 0%, #99201c 74%);
+}
+
+#intro .bottom-left-gradient {
+  position: absolute;
+  bottom: 10px;
+  left: -9%;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: #ad2f26;
+background-image: linear-gradient(147deg, #ad2f26 0%, #99201c 74%);
+}
+
+/* Showcase */
+#youtube {
+  position: relative;
+  overflow: hidden;
+  min-height: 600px;
+}
+
+#youtube .youtube-left {
+  display: inline-block;
+}
+
+#youtube .youtube-left img {
+  padding-bottom: 0.5em;
+  max-width: 500px;
+}
+
+#youtube .youtube-right {
+  display: inline-block;
+  width: 100%;
+  max-width: 400px;
+  margin-left: 10em;
+}
+
+#youtube .youtube-right h1 {
+  font-size: 2.5em;
+  color: maroon;
+  line-height: 1.5em;
+  position: relative;
+}
+
+#youtube .youtube-right p {
+  font-size: 1.125em;
+  line-height: 1.75em;
+}
+
+#youtube-button {
+  position: relative;
+  font-weight: 600;
+  z-index: 99;
+  display: block;
+  width: 100%;
+  max-width: 200px;
+  margin: 2em 0 1em;
+  padding: 1em;
+  text-align: center;
+  color: white;
+  border-radius: 10px;
+  background: maroon;
+}
+
+#youtube a:hover {
+  opacity: 50%;
+}
+
+#youtube .top-right-gradient {
+  position: absolute;
+  z-index: -999;
+  top: 45%;
+  right: -10%;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: linear-gradient(147deg, #ad2f26 0%, #99201c 74%);
+}
+
+
+#code {
+  position: relative;
+  overflow: hidden;
+  min-height: 600px;
+}
+
+#code .code-left {
+  display: inline-block;
+  width: 100%;
+  max-width: 400px;
+}
+
+#code .code-left h1 {
+  font-size: 2.5em;
+  color: maroon;
+  line-height: 1.5em;
+  position: relative;
+}
+
+#code .code-left p {
+  font-size: 1.125em;
+  line-height: 1.75em;
+}
+
+#code-button {
+  position: relative;
+  font-weight: 600;
+  z-index: 99;
+  display: block;
+  width: 100%;
+  max-width: 200px;
+  margin: 2em 0 1em;
+  padding: 1em;
+  text-align: center;
+  color: white;
+  border-radius: 10px;
+  background: maroon;
+}
+
+#code a:hover {
+  opacity: 50%;
+}
+
+#code .code-right {
+  position: relative;
+  display: inline-block;
+  margin-left: 6em;
+}
+
+#code .code-right img {
+  max-width: 600px;
+}
+
+#code .top-left-gradient {
+  position: absolute;
+  z-index: -999;
+  top: 0;
+  left: -10%;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: linear-gradient(147deg, #ad2f26 0%, #99201c 74%);
+}
+
+#music {
+  position: relative;
+  overflow: hidden;
+  min-height: 600px;
+}
+
+#music .music-left {
+  display: inline-block;
+}
+
+#music .music-left img {
+  padding-bottom: 0.5em;
+  max-width: 500px;
+}
+
+#music .music-right {
+  display: inline-block;
+  width: 100%;
+  max-width: 400px;
+  margin-left: 10em;
+}
+
+#music .music-right h1 {
+  font-size: 2.5em;
+  color: maroon;
+  line-height: 1.5em;
+  position: relative;
+}
+
+#music .music-right p {
+  font-size: 1.125em;
+  line-height: 1.75em;
+}
+
+#music-button {
+  position: relative;
+  font-weight: 600;
+  z-index: 99;
+  display: block;
+  width: 100%;
+  max-width: 200px;
+  margin: 2em 0 1em;
+  padding: 1em;
+  text-align: center;
+  color: white;
+  border-radius: 10px;
+  background: maroon;
+}
+
+#music a:hover {
+  opacity: 50%;
+}
+
+#music .top-right-gradient {
+  position: absolute;
+  z-index: -999;
+  top: 45%;
+  right: -10%;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: linear-gradient(147deg, #ad2f26 0%, #99201c 74%);
+}
+
+footer {
+  width: 100%;
+  text-align: left;
+  padding: 50px 0;
+  border-top: 5px solid maroon;
+}
+
+footer .footer-left,
+footer .footer-center,
+footer .footer-right {
+  display: inline-block;
+  vertical-align: top;
+}
+
+footer .footer-left {
+  width: 40%;
+}
+
+footer .footer-left img {
+  width: 200px;
+}
+
+footer .footer-center {
+  width: 35%;
+}
+
+footer .footer-center i {
+  background-color: white;
+  color: maroon;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 42px;
+  margin: 10px 15px;
+  vertical-align: middle;
+}
+
+footer .footer-center p {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0;
+}
+
+footer .footer-center p a {
+  color: #cccccc;
+  text-decoration: none;
+}
+
+footer .footer-center p a:hover{
+  color: maroon;
+}
+
+footer .footer-right {
+  width: 20%;
+  float: right;
+}
+
+footer .footer-connect {
+  line-height: 20px;
+  margin: 0%;
+}
+
+footer .footer-connect span {
+  display: block;
+  color: maroon;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+footer .footer-icons {
+  margin-top: 25px;
+}
+
+footer .footer-right a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  background-color: white;
+  color: maroon;
+  text-align: center;
+  line-height: 35px;
+  margin-left: 5px;
+}
