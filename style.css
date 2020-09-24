@@ -12,7 +12,6 @@ body {
   line-height: 1.6;
   overflow-x: hidden;
   color: #cccccc;
-}
 
 /* Header */
 header {
@@ -49,6 +48,10 @@ header img {
 .menu a:hover {
   color: maroon;
   font-weight: bold;
+}
+
+.menu li a.active {
+  color: maroon;
 }
 
 /* intro */
@@ -332,6 +335,8 @@ background-image: linear-gradient(147deg, #ad2f26 0%, #99201c 74%);
   background: linear-gradient(147deg, #ad2f26 0%, #99201c 74%);
 }
 
+/** Footer **/
+
 footer {
   width: 100%;
   text-align: left;
@@ -415,4 +420,108 @@ footer .footer-right a {
   text-align: center;
   line-height: 35px;
   margin-left: 5px;
+}
+
+
+/** VIDEO PAGE **/
+body #video-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#video-list .video {
+  margin: 150px 30px;
+  display: grid;
+  grid-template-columns: 300px;
+  grid-template-rows: 210px 210px 80px;
+  grid-template-areas: "video" "description" "stats";
+
+  border-radius: 18px;
+  background: white;
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+  text-align: center;
+
+  transition: 0.5 ease;
+  cursor: pointer;
+}
+
+#video-list .video:hover {
+  transform: scale(1.1);
+  box-shadow: rgba(0, 0, 0, 0.6);
+}
+
+#video-list .video .video-preview {
+  grid-area: video;
+  margin-top: 10px;
+}
+
+#video-list .video .video-description {
+  grid-area: description;
+  margin: 25px;
+}
+
+#video-list .video .video-description h2 {
+  color: black;
+}
+
+#video-list .video .video-description .date {
+  color: maroon;
+  font-size: 13px   ;
+}
+
+#video-list .video .video-description p {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #cccccc;
+}
+
+#video-list .video .video-stat {
+  grid-area: stats;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.5fr;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background: maroon;
+}
+
+#video-list .video .video-stat .stats {
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  color: white;
+}
+
+#video-list .video .video-stat .stats .key {
+  font-size: 11px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+#video-list .video .video-stat .stats .value {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+#video-list .top-right-gradient {
+  z-index: -999;
+  position: absolute;
+  top: -40%;
+  right: -27%;
+  width: 800px;
+  height: 800px;
+  border-radius: 50%;
+  background: linear-gradient(147deg, #ad2f26 0%, #99201c 74%);
+}
+
+#video-list .bottom-left-gradient {
+  position: absolute;
+  bottom: 10px;
+  left: -9%;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: #ad2f26;
+background-image: linear-gradient(147deg, #ad2f26 0%, #99201c 74%);
 }
