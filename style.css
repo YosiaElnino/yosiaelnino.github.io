@@ -12,6 +12,7 @@ body {
   line-height: 1.6;
   overflow-x: hidden;
   color: #cccccc;
+  scroll-behavior: smooth;
 }
 
 /* Header */
@@ -53,6 +54,10 @@ header img {
 
 .menu li a.active {
   color: maroon;
+}
+
+.menu li a.active2 {
+  color: white;
 }
 
 /* intro */
@@ -457,6 +462,11 @@ body #video-list {
   margin-top: 10px;
 }
 
+#video-list .video img {
+  width: 280px;
+  height: 180px;
+}
+
 #video-list .video .video-description {
   grid-area: description;
   margin: 25px;
@@ -475,6 +485,11 @@ body #video-list {
   margin-top: 15px;
   font-size: 14px;
   color: #cccccc;
+}
+
+#video-list .video .video-description audio {
+  width: 80%;
+  margin-top: 10px;
 }
 
 #video-list .video .video-stat {
